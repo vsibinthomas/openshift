@@ -11,7 +11,7 @@ nav.Bar('top', [
 nav.Item('Home','index'),
 nav.Item('Emotion App','emotion'),
 nav.Item('Visualise','polynomial'),
-nav.Item('Database','get_all_databases')
+nav.Item('Database','get_all_personnel')
 ])
 
 @app.route('/')
