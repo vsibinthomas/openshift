@@ -4,9 +4,19 @@ import unirest
 from forms import MessageForm
 import database
 import simple
+from flask_navigation import Navigation
+
+nav = Navigation(app)
+nav.Bar('top', [
+nav.Item('Home','index'),
+nav.Item('Emotion App','emotion'),
+nav.Item('Visualise','polynomial'),
+nav.Item('Database','get_all_databases')
+])
 
 @app.route('/')
-@app.route('/index/')
+#@app.route('/index/')
+
 def index():
     return render_template("index.html")
 
