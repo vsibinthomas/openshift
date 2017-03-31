@@ -33,5 +33,4 @@ def get_sample_document():
 	doc = collection.find_one()
 	output = []
 	output.append({attr:value for attr, value in doc.iteritems() if attr!=u'_id'})
-	return jsonify({'sample record' : doc})
-
+	return jsonify({'sample record' : output})
