@@ -29,9 +29,9 @@ def get_collection_methods_and_attributes():
 
 @app.route('/database/London/sample', methods=['GET'])
 def get_sample_document():
-	collection = mongo.db.London
+	collection = mongo.db.London_Visitors
 	doc = collection.find_one()
-	#output = []
-	#output.append({attr:value for attr, value in doc.items() if attr!=u'_id'})
+	output = []
+	output.append({attr:value for attr, value in doc.iteritems() if attr!=u'_id'})
 	return jsonify({'sample record' : doc})
 
