@@ -17,6 +17,26 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 <body>
+ <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        {% for item in nav.top %}
+        <li class="{{ 'active' if item.is_active else '' }}">
+        <a href="{{ item.url }}">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        {% for item in nav.top %}
+        <li class="{{ 'active' if item.is_active else '' }}">
+        <a href="{{ item.url }}">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
     <!-- A simple form for changing the graph -->
     <p> Select your settings: </p>
     <form name="color_button" method='GET'>
@@ -38,28 +58,7 @@
     </form>
     {{ plot_div|indent(4)|safe }}
     <p> Demonstrates some very simple embedding into a webpage</p>
-</body>
-<body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        {% for item in nav.top %}
-        <li class="{{ 'active' if item.is_active else '' }}">
-        <a href="{{ item.url }}">{{ item.label }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        {% for item in nav.top %}
-        <li class="{{ 'active' if item.is_active else '' }}">
-        <a href="{{ item.url }}">{{ item.label }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+ 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
