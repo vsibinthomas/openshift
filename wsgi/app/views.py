@@ -7,7 +7,7 @@ import simple
 from flask_navigation import Navigation
 
 nav = Navigation(app)
-nav.Bar('top', [nav.Item('Home','index'),nav.Item('Emotion Applic','emotion'),nav.Item('Visualise','polynomial'),nav.Item('Database Coll','get_all_collections'),nav.Item('Database Sample','get_sample_document')])
+nav.Bar('top', [nav.Item('Home','index'),nav.Item('Emotion Applic','emotion'),nav.Item('Visualise','polynomial'),nav.Item('Database Coll','get_all_collections')])
 
 @app.route('/')
 #@app.route('/index/')
