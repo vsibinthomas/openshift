@@ -4,21 +4,21 @@
     <meta charset='utf-8' />
     <meta http-equiv='content-type' content='text/html; charset=utf-8' />
 
-    <title>Embed Demo Visualisation</title>
+    <title>Data Visualisation</title>
 
     {{ js_resources|indent(4)|safe }}
 
     {{ css_resources|indent(4)|safe }}
 
     {{ plot_script|indent(4)|safe }}
-<!-- Compiled and minified CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
           
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
 <body>
- <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">STV30</a>
       <ul class="right hide-on-med-and-down">
         {% for item in nav.top %}
         <li class="{{ 'active' if item.is_active else '' }}">
@@ -57,28 +57,7 @@
         <button type="submit">Submit</button>
     </form>
     {{ plot_div|indent(4)|safe }}
-    <p> Demonstrates some very simple embedding into a webpage</p>
- 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">{% block title %}{% endblock %}</h1>
-      <div class="row center">
-          {% block content %}{% endblock %}
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-
-
-    <br><br>
-
-    <div class="section">
-
-    </div>
-  </div>
-
+    <p> Visualises the data based on the values input by the user</p>
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
@@ -100,6 +79,12 @@
             <li><a class="white-text" href="mailto:s.valliamannil@se16.qmul.ac.uk">s.valliamannil@se16.qmul.ac.uk</a></li>
           </ul>
         </div>
+	<div class="col l3 s12">
+          <h5 class="white-text">Git</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/vsibinthomas/openshift">git repository</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="footer-copyright">
@@ -108,14 +93,5 @@
       </div>
     </div>
   </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-      
-
-  </body>
- 
+ </body>
 </html>

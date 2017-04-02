@@ -43,3 +43,12 @@ To get more log messages in your OpenShift logs please add the following line to
 To read more about logging in Flask please see this email
 
 http://librelist.com/browser//flask/2012/1/27/catching-exceptions-from-flask/
+
+1) This application is basically using a cloud service to use sentiment analysis in the Emotions tab
+
+2) Usage of the data visualisation 
+
+3) Mongo DB usage 
+
+4) Database populated with values(OPTIONAL)
+

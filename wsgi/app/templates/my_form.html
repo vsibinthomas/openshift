@@ -2,6 +2,9 @@
 {% block title %}<img src="{{ url_for('static', filename = 'img/'+mood+'_face.jpeg')}}", width=80, height=60, quality=95 />
 {% endblock %}
 {% block content %}
+<div class="row center">
+        This Page would analyse the sentiment of the content typed in the box and this would use the api to give the result in the form of a sentiment which will be displayed as an image
+</div>
 <form action="" method="POST">
  	{{ form.csrf_token }}
  	{{ form.message.label }} 
