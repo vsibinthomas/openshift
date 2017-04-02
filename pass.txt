@@ -1,4 +1,0 @@
-   Root User:     admin
-   Root Password: kqnwy9EFx63N
-   Database Name: stv30apitest1
-
